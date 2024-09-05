@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Module>
+	<ModulePrefs title="Example WebGL Game" author="example"
+	thumbnail="" screenshot="" height="1080" width="1920">
+		<Require feature="opensocial-0.8" />
+		<Require feature="opensocial-payment" />
+		<Require feature="nutaku" />
+	</ModulePrefs>
+	<Content preferred_width="1920" type="html" view="canvas">
+		<![CDATA[
+<link rel="stylesheet" href="https://www.example.com
+/Builds/release/TemplateData/style.css">
+<script src="https://www.example.com/Builds/release
+/TemplateData/UnityProgress.js" ></script>
+<script src="https://www.example.com/Builds/release
+/Build/UnityLoader.js" ></script>
+<script type="text/javascript">
+var gameInstance;
+function init() {
+gameInstance = UnityLoader.instantiate
+("gameContainer", "https://www.example.com/Builds/release/Build/A1.
+json", {onProgress: UnityProgress});
+}
+gadgets.util.registerOnLoadHandler(init);
+</script>
+<body style="min-height: 1080px">
+<div class="main" id="main">
+<div class="mainLeft"></div>
+<div class="mainRight"></div>
+<div class="webgl-content" id="
+webglcontent" style="min-height: 1080px">
+<div id="gameContainer" style="
+width: 1280px; height: 720px; box-shadow: 0px 0px 25px #000000;"></div>
+<div id="LogoBG" class="Logos
+LogoBG"></div>
+<div id="LogoA" class="Logos
+LogoA"></div>
+<div id="LogoB" class="Logos
+LogoB"></div>
+</div>
+<div id="Footer" class="Footer"
+onclick="gameInstance.SetFullscreen(1)"></div>
+</div>
+</body>
+]]>
+	</Content>
+</Module>
