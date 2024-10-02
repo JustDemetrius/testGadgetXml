@@ -8,14 +8,14 @@
     <Content preferred_width="1920" type="html" view="canvas">
     <![CDATA[
         <link rel="stylesheet" href="https://justdemetrius.github.io/testGadgetXml/TemplateData/style.css">
-        <script src="https://justdemetrius.github.io/testGadgetXml/Build/Test.framework.js" ></script>
-        <script src="https://justdemetrius.github.io/testGadgetXml/Build/Test.loader.js" ></script>
+        <script src="https://justdemetrius.github.io/testGadgetXml/Build/testGadgetXml.framework.js" ></script>
+        <script src="https://justdemetrius.github.io/testGadgetXml/Build/testGadgetXml.loader.js" ></script>
         <script type="text/javascript">
  
               const config = {
-                dataUrl: "https://justdemetrius.github.io/testGadgetXml/Build/Test.data",
-                frameworkUrl: "https://justdemetrius.github.io/testGadgetXml/Build/Test.framework.js",
-                codeUrl: "https://justdemetrius.github.io/testGadgetXml/Build/Test.wasm",
+                dataUrl: "https://justdemetrius.github.io/testGadgetXml/Build/testGadgetXml.data",
+                frameworkUrl: "https://justdemetrius.github.io/testGadgetXml/Build/testGadgetXml.framework.js",
+                codeUrl: "https://justdemetrius.github.io/testGadgetXml/Build/testGadgetXml.wasm",
                 streamingAssetsUrl: "https://justdemetrius.github.io/testGadgetXml/StreamingAssets",
                 companyName: "DefaultCompany",
                 productName: "Adult",
