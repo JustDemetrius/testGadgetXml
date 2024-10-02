@@ -30,7 +30,7 @@
                   console.log(progress);
                   }).then((gameInstance) => {
                     console.log("WAS LOADED");
-                    gameInstance.SetFullscreen(0);
+                    gameInstance.SetFullscreen(1);
                   }).catch((message) => {
                     alert(message);
                   });
