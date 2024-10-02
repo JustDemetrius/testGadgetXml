@@ -31,6 +31,7 @@
                   console.log(progress);
                   }).then((gameInstance) => {
                     console.log("WAS LOADED");
+                    gameInstance.SetFullscreen(0);
                   }).catch((message) => {
                     alert(message);
                   });
@@ -51,7 +52,6 @@
                     <div id="LogoA"  class="Logos LogoA"></div>
                     <div id="LogoB"  class="Logos LogoB"></div>
                 </div>
-                <div id="Footer" class="Footer" onclick="gameInstance.SetFullscreen(0)"></div>
             </div>
         </body>
     ]]>
