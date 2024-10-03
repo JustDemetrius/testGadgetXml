@@ -27,6 +27,8 @@
              
             function init() {
                 canvas = document.querySelector("#unity-canvas"); //or getElementById('unity-canvas')
+                canvas.style.width = "1920px";
+                canvas.style.height = "1080px";
                 gameInstance = createUnityInstance(canvas, config, (progress) => {
                   console.log(progress);
                   }).then((gameInstance) => {
