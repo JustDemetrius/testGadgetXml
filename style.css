@@ -1,16 +1,17 @@
 html, body {
     margin: 0;
     padding: 0;
+    width: 100%;
     height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #000; /* Фон страницы, можно изменить цвет */
+    background-color: #000; /* Фон страницы */
 }
 
 #unityContainer {
-    width: 960px; /* Ширина контейнера Unity игры */
-    height: 600px; /* Высота контейнера Unity игры */
+    width: 100%; /* Делаем контейнер на 100% ширины */
+    height: 100%; /* И на 100% высоты */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -19,4 +20,5 @@ html, body {
 canvas {
     width: 100%;
     height: 100%;
+    display: block;
 }
